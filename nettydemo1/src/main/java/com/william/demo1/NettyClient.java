@@ -31,7 +31,7 @@ public class NettyClient implements Runnable{
                             pipeline.addLast("frameEncoder", new LengthFieldPrepender(4));
                             pipeline.addLast("decoder", new StringDecoder(CharsetUtil.UTF_8));
                             pipeline.addLast("encoder", new StringEncoder(CharsetUtil.UTF_8));
-                            pipeline.addLast("handler", new MsmClientHandler());
+                            pipeline.addLast("handler", new MsgClientHandler());
                         }
                     });
 
