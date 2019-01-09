@@ -7,5 +7,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>bio</module>
+    <module>nettydemo1</module>
   </modules>
 </project>
